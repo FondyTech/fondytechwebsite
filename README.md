@@ -11,21 +11,23 @@ Plain HTML, CSS, and JavaScript. No build step, no installs.
 You can also just double-click `index.html` to open it in a browser.
 
 ## Files
-- `index.html` - all page content: home sections and the Pricing page (#pricing)
+- `index.html` - home page
+- `services.html`, `business.html`, `work.html`, `pricing.html`, `about.html`, `contact.html` - the other pages
+- The header menu and footer are copied into every page. If you change them, change all seven.
 - `css/styles.css` - colors, fonts, layout. Brand colors are at the top in `:root`.
-- `js/main.js` - picker, quote builder, page switching, contact form
+- `js/main.js` - home picker, quote builder, contact form, phone menu
 - `assets/` - logo and favicon
 
 ## Common edits
-- **Prices:** in `js/main.js`, edit the `DATA` object near the top. Prices only appear on the Pricing page.
-- **Phone and email:** in the Contact section of `index.html` (search `249-5775` and `contact@fondytech.com`).
+- **Prices:** in `js/main.js`, edit the `DATA` object near the top. Prices only appear on `pricing.html`.
+- **Phone and email:** in `contact.html` and in the footer of every page (search `249-5775` and `contact@fondytech.com`).
 - **Contact form:** it doesn't send anything yet. Create a free form at formspree.io, then
   in `js/main.js` replace the "Preview only" message in the submit handler with a
   `fetch("https://formspree.io/f/YOUR_ID", { method: "POST", body: new FormData(form), headers: { Accept: "application/json" } })`.
-- **Your photo:** replace the cardinal in the About section (`class="portrait"`).
+- **Your photo:** replace the cardinal in `about.html` (`class="portrait"`).
 
 ## Before launch
-- Remove the lock screen: delete the `fondytech-lock.js` script line in the `<head>` of `index.html`
+- Remove the lock screen: delete the `fondytech-lock.js` script line in the `<head>` of every page
   (the file `js/fondytech-lock.js` can stay or go). To lock it again in your browser for testing,
   run `FondyTechLock.reset()` in the console.
 - Connected contact form

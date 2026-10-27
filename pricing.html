@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- Under-construction lock. Delete this line to launch. -->
+<script src="js/fondytech-lock.js" data-password-hash="fce128dadebba054e5486178041d4a4b8eb850bb99726354ecef3164bd98d26e" data-site="FondyTech Website"></script>
+<title>Pricing | FondyTech, Fond du Lac</title>
+<meta name="description" content="Build an exact quote for computer repair, WiFi, business IT, websites, and software. Labor prices are exact; parts are listed at cost.">
+<link rel="icon" href="assets/fondytech-icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="on-pricing">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="cardinal" viewBox="0 0 64 64">
+      <path d="M16 60 L12 34 L8 4 L22 14 L20 17.5 L32 19 L44 23.5 L47 38 C47 47 45 54 43 60 Z" fill="#C41E3A"/>
+      <path d="M33 21 L47 25 L47 38 L41 45 L33 34 Z" fill="#141112"/>
+      <path d="M46 25 L60 31.5 L46 38 Z" fill="#8F1229"/>
+      <circle cx="40" cy="29" r="2.4" fill="#FFFFFF"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="FondyTech home">
+      <svg aria-hidden="true"><use href="#cardinal"/></svg>
+      <span class="wordmark">FONDY<b>TECH</b></span>
+    </a>
+    <nav class="nav" id="mainNav" aria-label="Main">
+      <a href="services.html">Services</a>
+      <a href="business.html">Business IT</a>
+      <a href="work.html">Work</a>
+      <a href="pricing.html" aria-current="page">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="bar-actions">
+      <a class="btn btn-red" href="pricing.html">Get a quote</a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mainNav">Menu</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="pv-head">
+  <div class="wrap">
+    <p class="eyebrow">Pricing</p>
+    <h1>Build your quote.</h1>
+    <p class="lede">Pick what you need and the total updates as you go. Labor prices are exact; parts and equipment are listed separately at cost.</p>
+    <div class="seg" role="group" aria-label="Customer type">
+      <button type="button" id="modeRes" aria-pressed="true">Residential</button>
+      <button type="button" id="modeCom" aria-pressed="false">Commercial</button>
+    </div>
+    <p class="seg-sub" id="modeSub">For homes, families, and personal devices.</p>
+  </div>
+</div>
+<div class="wrap">
+  <div class="qgrid">
+    <div id="qOptions"></div>
+    <aside>
+      <div class="receipt" id="quote">
+        <div class="receipt-top"><h2>Your quote</h2><span class="tag" id="qMode">Residential</span></div>
+        <div class="rbody" id="qLines"></div>
+        <div class="rtotal" id="qTotals"></div>
+        <div class="rnotes" id="qNotes"></div>
+        <div class="ractions">
+          <button class="btn btn-red" type="button" id="qSend">Request this quote</button>
+          <button class="linkbtn" type="button" id="qReset">Start over</button>
+        </div>
+      </div>
+      <div class="howto">
+        <h3>How pricing works</h3>
+        <ul>
+          <li><b>$75/hr</b> labor for hourly work, in half-hour steps after the first hour</li>
+          <li><b>$99</b> house call minimum, covering travel within 15 miles and the first hour</li>
+          <li><b>$1/mi</b> travel beyond 15 miles</li>
+          <li><b>$49</b> diagnostic when the problem is unclear, credited toward the repair</li>
+          <li><b>No fix, no fee.</b> If we can't fix it, you pay only the diagnostic</li>
+          <li>Parts and equipment at cost plus handling, itemized on your invoice</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</div>
+</main>
+
+<div class="qbar" id="qbar">
+<div><span class="qb-lbl" id="qbLbl">Quote total</span><span class="qb-amt" id="qbAmt">$0</span></div>
+<a href="#quote" id="qbView">View quote</a>
+</div>
+
+<footer>
+  <div class="wrap">
+    <span class="brand"><svg aria-hidden="true" style="width:32px;height:32px"><use href="#cardinal"/></svg><span class="wordmark">FONDY<b>TECH</b></span></span>
+    <nav class="foot-nav" aria-label="Footer">
+      <a href="services.html">Services</a>
+      <a href="business.html">Business IT</a>
+      <a href="work.html">Work</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p><a href="tel:+19202495775">(920) 249-5775</a> · <a href="mailto:contact@fondytech.com">contact@fondytech.com</a></p>
+    <p>Veteran-owned local tech help · Fond du Lac, Wisconsin · © 2026 FondyTech</p>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

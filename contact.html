@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- Under-construction lock. Delete this line to launch. -->
+<script src="js/fondytech-lock.js" data-password-hash="fce128dadebba054e5486178041d4a4b8eb850bb99726354ecef3164bd98d26e" data-site="FondyTech Website"></script>
+<title>Contact | FondyTech, Fond du Lac</title>
+<meta name="description" content="Call or text (920) 249-5775, email contact@fondytech.com, or send a request. Evenings and Saturdays around Fond du Lac.">
+<link rel="icon" href="assets/fondytech-icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="cardinal" viewBox="0 0 64 64">
+      <path d="M16 60 L12 34 L8 4 L22 14 L20 17.5 L32 19 L44 23.5 L47 38 C47 47 45 54 43 60 Z" fill="#C41E3A"/>
+      <path d="M33 21 L47 25 L47 38 L41 45 L33 34 Z" fill="#141112"/>
+      <path d="M46 25 L60 31.5 L46 38 Z" fill="#8F1229"/>
+      <circle cx="40" cy="29" r="2.4" fill="#FFFFFF"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="FondyTech home">
+      <svg aria-hidden="true"><use href="#cardinal"/></svg>
+      <span class="wordmark">FONDY<b>TECH</b></span>
+    </a>
+    <nav class="nav" id="mainNav" aria-label="Main">
+      <a href="services.html">Services</a>
+      <a href="business.html">Business IT</a>
+      <a href="work.html">Work</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+    <div class="bar-actions">
+      <a class="btn btn-red" href="pricing.html">Get a quote</a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mainNav">Menu</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Contact</p>
+      <h1 class="h2">Tell us what's going on.</h1>
+      <p class="lede" style="margin-top:1rem">Send a quick note and we'll reply by text or email with a time. For anything urgent, call or text.</p>
+      <div class="contact-lines">
+        <div><span class="eyebrow">Call or text</span><strong><a href="tel:+19202495775">(920) 249-5775</a></strong></div>
+        <div><span class="eyebrow">Email</span><strong><a href="mailto:contact@fondytech.com">contact@fondytech.com</a></strong></div>
+        <div><span class="eyebrow">Hours</span><span>Mon–Fri 4–8 PM · Saturday 9 AM–4 PM</span></div>
+      </div>
+    </div>
+    <form id="bookForm" novalidate>
+      <div class="row2">
+        <label for="fName">Name<input id="fName" name="name" autocomplete="name" required></label>
+        <label for="fReach">Phone or email<input id="fReach" name="reach" autocomplete="tel" required></label>
+      </div>
+      <div class="row2">
+        <label for="fNeed">What do you need?<select id="fNeed" name="need"></select></label>
+        <label for="fWhen">Best time<select id="fWhen" name="when"><option>Weekday evening</option><option>Saturday</option><option>Either works</option></select></label>
+      </div>
+      <label for="fMsg">Details<textarea id="fMsg" name="message" placeholder="What's happening, what device or system, and anything you've already tried."></textarea></label>
+      <div><button class="btn btn-red" type="submit">Send request</button></div>
+      <p class="form-note" id="formNote" hidden></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="brand"><svg aria-hidden="true" style="width:32px;height:32px"><use href="#cardinal"/></svg><span class="wordmark">FONDY<b>TECH</b></span></span>
+    <nav class="foot-nav" aria-label="Footer">
+      <a href="services.html">Services</a>
+      <a href="business.html">Business IT</a>
+      <a href="work.html">Work</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p><a href="tel:+19202495775">(920) 249-5775</a> · <a href="mailto:contact@fondytech.com">contact@fondytech.com</a></p>
+    <p>Veteran-owned local tech help · Fond du Lac, Wisconsin · © 2026 FondyTech</p>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
