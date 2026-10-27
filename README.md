@@ -18,7 +18,7 @@ You can also just double-click `index.html` to open it in a browser.
 
 ## Common edits
 - **Prices:** in `js/main.js`, edit the `DATA` object near the top. Prices only appear on the Pricing page.
-- **Phone and email:** search `index.html` for `555-0142` and `hello@fondytech.com`.
+- **Phone and email:** in the Contact section of `index.html` (search `249-5775` and `contact@fondytech.com`).
 - **Contact form:** it doesn't send anything yet. Create a free form at formspree.io, then
   in `js/main.js` replace the "Preview only" message in the submit handler with a
   `fetch("https://formspree.io/f/YOUR_ID", { method: "POST", body: new FormData(form), headers: { Accept: "application/json" } })`.
@@ -28,7 +28,7 @@ You can also just double-click `index.html` to open it in a browser.
 - Remove the lock screen: delete the `fondytech-lock.js` script line in the `<head>` of `index.html`
   (the file `js/fondytech-lock.js` can stay or go). To lock it again in your browser for testing,
   run `FondyTechLock.reset()` in the console.
-- Real phone number, email, and connected form
+- Connected contact form
 - Real ClutchSkins screenshots (with the owner's OK to feature it)
 - No reviews until you have real ones
 
